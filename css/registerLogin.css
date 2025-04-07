@@ -1,0 +1,178 @@
+/* ===== Base Styles ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('../assets/Library.jpg') no-repeat center center fixed;
+    margin: 0;
+    padding: 0px;
+    color: #333;
+    line-height: 1.6;
+    background-size: cover;
+    min-height: 100vh;
+   overflow-x: hidden;
+
+}
+
+/* Form Container */
+form {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-heading {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+/* Input Fields & Labels */
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+select {
+    width: auto;
+    margin-right: 10px;
+}
+
+/* Phone Number Input Group */
+input[name="phone"] {
+    width: calc(100% - 110px); /* Adjust based on country code width */
+}
+
+/* Submit Button */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #2980b9;
+}
+
+
+
+/* Login Link */
+h4 a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+h4 a:hover {
+    text-decoration: underline;
+}
+
+header {
+    width: 100%;
+    margin: 0;
+    padding: 1.2rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.0);
+    position: relative;
+    background-color: blue;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+
+
+.navbar {
+    max-width: unset;
+    margin: 0 auto; /* Centers content */
+    padding: 0 20px; /* Prevents text from touching edges */
+}
+
+.navbar h1 {
+    color:white;
+    text-align: center;
+    margin: 0;
+ 
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+}
+
+
+footer {
+    
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem; /* Adds space above footer */
+    font-size: 0.9rem;
+    color: white; /* Neutral gray text */
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: 500;
+}
+
+/* Error container */
+.error-container {
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #ffe5e5;
+    padding: 12px 15px;
+    border-left: 4px solid #ff4d4d;
+    border-radius: 4px;
+}
+
+/* Individual error message */
+.error-message {
+    color: #b30000;
+    font-size: 0.95rem;
+    margin: 5px 0;
+}
+/* Success Message */
+.success-message {
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #e1f5e1;
+    padding: 12px 15px;
+    border-left: 4px solid #4CAF50;
+    border-radius: 4px;
+    color: #2e7d32;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-align: center;
+}
+.success-message a {
+    color: #2e7d32;
+    text-decoration: underline;
+}
+body {
+    overflow-x: hidden;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}

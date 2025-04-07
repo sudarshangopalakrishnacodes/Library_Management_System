@@ -1,0 +1,124 @@
+/* add_book.css */
+
+/* Base styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Centered wrapper for form */
+.page_wrapper {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+header {
+    width: 100%;
+    margin: 0;
+    padding: 1.2rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.0);
+    position: relative;
+    background-color: blue;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+
+.navbar {
+    max-width: unset;
+    margin: 0 auto; /* Centers content */
+    padding: 0 20px; /* Prevents text from touching edges */
+}
+
+.navbar h1 {
+    color:white;
+    text-align: center;
+    margin: 0;
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+}
+
+/* Form */
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Submit button */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Error and success messages */
+.error-container,
+.success-message {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 12px 15px;
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+.error-container {
+    background-color: #ffe5e5;
+    border-left: 4px solid #ff4d4d;
+    color: #b30000;
+}
+
+.success-message {
+    background-color: #e1f5e1;
+    border-left: 4px solid #4CAF50;
+    color: #2e7d32;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* "Take Me Home" button */
+.backToHome {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #6c63ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.backToHome:hover {
+    background-color: #5549d5;
+}

@@ -1,0 +1,113 @@
+/* dashboard.css */
+
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('../assets/Library.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+   
+}
+header {
+    width: 100%;
+    margin: 0;
+    padding: 1.2rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.0);
+    position: relative;
+    background-color: blue;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+
+
+.navbar {
+    max-width: unset;
+    margin: 0 auto; /* Centers content */
+    padding: 0 20px; /* Prevents text from touching edges */
+}
+
+.navbar h1 {
+    color:white;
+    text-align: center;
+    margin: 0;
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+}
+
+/* Container for content */
+.container {
+    max-width: 700px;
+    margin: 80px auto;
+    background-color: rgba(255, 255, 255, 0.85); /* white with 85% opacity */
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Welcome message styling */
+.container h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Styled links that look like buttons */
+.container a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 12px 24px;
+    margin: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.container a:hover {
+    background-color: #0056b3;
+}
+
+/* Logout button styling */
+.logout-button {
+    position: absolute;
+    top: 90px;
+    right: 5px;
+    background-color: #dc3545;
+    padding: 10px 20px;
+    border-radius: 6px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #b52a37;
+}
+footer {
+   
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem; /* Adds space above footer */
+    font-size: 0.9rem;
+    color: #666; /* Neutral gray text */
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: 500;
+}
