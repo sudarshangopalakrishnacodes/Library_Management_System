@@ -105,7 +105,7 @@ require_once "templates/header.php";
         <form action="<?= htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
             <label>Enter the book ID</label><br>
             <input type="number" name="bookid" required><br>
-            <input type="submit" name="submit" value="Search Book"><br>
+            <input type="submit" name="submit" value="Return Book"><br>
 
         </form>
         <a class="backToHome" href="dashboard.php">Take Me Home 📚 </a>

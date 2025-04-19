@@ -4,7 +4,7 @@
 function connect()
 {
     $host = "localhost";
-    $dbname = "library_db";
+    $dbname = "library_system";
     $username = "root";
     $password = "";
 

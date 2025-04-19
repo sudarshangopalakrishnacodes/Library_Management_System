@@ -48,8 +48,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (($countrycode == "+91" || $countrycode == "+1") && $length != 10) {
         $errors[] = "Phone number must be exactly 10 digits for country code (+1) and (+91)";
     }
-    if ($countrycode == "+49" && $length != 11) {
-        $errors[] = "Phone number must be exactly 11 digits for country code (+49)";
+    if ($countrycode == "+49" && ($length != 10 && $length != 11)) {
+        $errors[] = "Phone number must be exactly 10 or 11 digits for country code (+49)";
     }
 
     if (empty($email)) {
