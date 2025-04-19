@@ -31,6 +31,45 @@ To run this project locally, you’ll need:
   -- MySql which comes in XAMPP stack
 
 ---
+## 🔧 MySQL Database Setup
+
+Run the following SQL commands in **phpMyAdmin** or your preferred MySQL client after starting MySQL:
+
+
+CREATE DATABASE IF NOT EXISTS library_system;
+USE library_system;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    phone VARCHAR(20) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    role ENUM('customer', 'librarian') NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE books (
+    book_id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    subject VARCHAR(100) NOT NULL,
+    author VARCHAR(100) NOT NULL,
+    total_copies INT NOT NULL CHECK (total_copies > 0),
+    available_copies INT NOT NULL DEFAULT 0,
+    added_on TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE borrowed_books (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    book_id INT NOT NULL,
+    borrow_date DATE NOT NULL,
+    return_date DATE DEFAULT NULL,
+    is_returned BOOLEAN DEFAULT 0,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY (book_id) REFERENCES books(book_id) ON DELETE CASCADE
+);
 
 ## How to Run
 
@@ -45,7 +84,7 @@ To run this project locally, you’ll need:
    ```
 5. Open your browser and visit:
    ```
-   http://localhost/LibraryManagementSystem/register.php
+   http://localhost/LibraryManagementSystem/
    ```
 
 ---
